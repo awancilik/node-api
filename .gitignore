@@ -14,3 +14,6 @@ web_modules/
 
 # TypeScript cache
 *.tsbuildinfo
+
+*.sw[a-z]
+node_modules
