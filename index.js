@@ -32,7 +32,7 @@ app.delete('/users/:id', db.deleteUser)
 app.post('/recepients', db.createRecepient)
 app.get('/recepients', db.getRecepientId)
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`App running on port ${port}.`)
 })
