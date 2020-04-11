@@ -33,7 +33,7 @@ app.post('/recepients', db.createRecepient)
 app.get('/recepients', db.getRecepientId)
 
 const port = process.env.PORT || 3000;
-server.listen(port, () => {
+app.listen(port, () => {
   console.log(`App running on port ${port}.`)
 })
 
