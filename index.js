@@ -3,6 +3,9 @@ const bodyParser = require('body-parser')
 const app = express()
 const db = require('./queries')
 
+var http = require('http')
+var server = http.createServer(app)
+
 app.use(bodyParser.json())
 app.use(
   bodyParser.urlencoded({
@@ -30,8 +33,15 @@ app.post('/recepients', db.createRecepient)
 app.get('/recepients', db.getRecepientId)
 
 // const port = process.env.PORT || 3000;
-// app.listen(port, () => {
+// server.listen(port, () => {
 //   console.log(`App running on port ${port}.`)
 // })
 
-app.listen(8080, '172.31.246.66');
+server.listen(8080, '172.31.246.66');
+console.log('Server running at http://172.31.246.66:8080/');
+
+// var http = require('http');
+// http.createServer(function (req, res) {
+//   res.writeHead(200, {'Content-Type': 'text/plain'});
+//   res.end('Hello World\n');
+// }).listen(8080, '172.31.246.66');
