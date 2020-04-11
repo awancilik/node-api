@@ -32,13 +32,13 @@ app.delete('/users/:id', db.deleteUser)
 app.post('/recepients', db.createRecepient)
 app.get('/recepients', db.getRecepientId)
 
-// const port = process.env.PORT || 3000;
-// server.listen(port, () => {
-//   console.log(`App running on port ${port}.`)
-// })
+const port = process.env.PORT || 3000;
+server.listen(port, () => {
+  console.log(`App running on port ${port}.`)
+})
 
-server.listen(8080, '172.31.246.66');
-console.log('Server running at http://172.31.246.66:8080/');
+// server.listen(8080, '172.31.246.66');
+// console.log('Server running at http://172.31.246.66:8080/');
 
 // var http = require('http');
 // http.createServer(function (req, res) {
