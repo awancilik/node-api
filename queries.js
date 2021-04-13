@@ -1,10 +1,10 @@
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "103.146.202.108",
-  user: "lbs",
-  password: "Baggage#123",
-  database: "dev_fesindo"
+  host: "xx.xx.xx.xx",
+  user: "xx",
+  password: "",
+  database: ""
 });
 
 const tableuser = 'dev_fesindo.ha_user';
